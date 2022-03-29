@@ -28,6 +28,10 @@ const modalHandler = ()=>{
                     setMainCart(commandData.data)
                 }else if(commandData.command === "showCart"){
                     addCardHandler(commandData.data);
+                }else if(commandData.command === "openCart"){
+                    setIsmodal(commandData.data)
+                }else if(commandData.command === "closeCart"){
+                    setIsmodal(commandData.data)
                 }
             }
         });
