@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
+
 const Cart = () => {
 
     const [mainCart, setMainCart] = useState([]);
@@ -39,12 +40,12 @@ const modalHandler = ()=>{
 
     console.log(mainCart);
     return (
-        <div className='album py-5 bg-light'>
+        <div className='album py-5 bg-light '>
         <div className='container'>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {mainCart.map(item=>(
                     <div key={item.id} className='col'>
-                        <div className='card shadow-sm p-3 'style={{minHeight:"500px"}}>
+                        <div className='card shadow-sm p-1 'style={{minHeight:"500px"}}>
                         <div className='card-title'>
                             <h4 className='text-muted text-center'>Product # {item.id}</h4>
                         </div>
